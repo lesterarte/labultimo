@@ -1,10 +1,15 @@
-#pragma once 
+#pragma once
+#include <string>
+#include "obras.h"
+using std::string; 
 
-class desing
+class desing : public obras
 {
 	private:
 		string terreno; 
 
 	public: 
-		desing(string);
+		desing(string,string,string,string);
+		~desing();
+		string toString()const;
 };

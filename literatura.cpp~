@@ -4,8 +4,8 @@
 using std::string;
 using std::stringstream;
 
-literatura::literatura(string genero, string epoca, string name, string autor, string fecha) :  obras(name,autor,fecha) ,
- genero(genero), epoca(epoca)
+literatura::literatura(string genero, string epoca, string autor, string fecha) :  obras(name,autor,fecha) , genero(genero), 
+epoca(epoca)
 {
 
 }

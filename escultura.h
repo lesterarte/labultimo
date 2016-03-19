@@ -1,11 +1,17 @@
 #pragma once 
 
-class escultura
+#include <string>
+#include "obras.h"
+using std::string;
+
+class escultura : public obras
 {
 	private:
-		double peso; 
+		string peso; 
 		string material; 
 
 	public: 
-		escultura(double,string);
+		escultura(string,string,string,string,string);
+		~escultura();
+		string toString()const;
 };

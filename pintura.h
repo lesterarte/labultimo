@@ -1,11 +1,17 @@
 #pragma once 
+#include <string>
+#include "obras.h"
+using std::string;
 
-class pintura
+class pintura : public obras
 {
 	private:
 		string material; 
 		string tecnica; 
 
 	public: 
-		pintura(string,string);
+		pintura(string,string,string,string,string);
+		~pintura();
+		string toString()const;
+
 };
